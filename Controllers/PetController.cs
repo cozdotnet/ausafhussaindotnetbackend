@@ -78,7 +78,7 @@ namespace PerCare.Controllers
             await _context.SaveChangesAsync();
             _context.Pets.Remove(item);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok("Delete Successful");
         }
     }
 }
